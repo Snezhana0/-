@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quiz{
+    margin: 10px;
+    width: 500px;
+}
+
+.quiz-questions,
+.quiz-indicator,
+.quiz-results{
+    margin-bottom: 10px;
+}
+
+
+.quiz-question-item_question {
+    font-size: 30px;
+    margin-bottom:10px;
+
+}
+
+.quiz-question-item_answers{
+    margin:0;
+    padding:0;
+    margin-bottom: 10px;
+    list-style:none;
+}
+
+.quiz-results-item_question {
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+.quiz-results-item_answers{
+    margin:0;
+    padding:0;
+    margin-bottom: 20px;
+    list-style:none;
+}
+
+.questions--hidden,
+.indicator--hidden,
+.btn-next--hidden{
+    display: none;
+}
+.results--visible,
+.btn-restart--visible{
+    display: block;
+}
+
+.answer--invalid{
+    color: red;
+}
+
+.answer-valid{
+    color: green;
+}
+
+.btn-restart{
+    border-radius: 20px;
+    color: black; /* Белые буквы */
+    font-size: 15pt; /* Размер шрифта в пунктах */
+}
+
+.btn-next{
+    border-radius: 20px;
+    color: black; /* Белые буквы */
+    font-size: 15pt; /* Размер шрифта в пунктах */
+}
+
+.main{
+     margin: 0 auto;
+    max-width: 400px;
+}

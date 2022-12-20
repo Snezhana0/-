@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Шрек навсегда!, Depeche Mode, Вспомни детство, Поэтесса современности, Правда или Ложь">
+    <meta name="description" content="">
+    <title>Игры</title>
+    <link rel="stylesheet" href="../static/CSS/nicepage.css" media="screen">
+<link rel="stylesheet" href="../static/CSS/Игры.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.0.7, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/Pngtreeawardbadgeicondesigntemplate_4766799.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Игры">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class=" u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-4294" style=""><div class="u-section-rows">
+        <div class="u-clearfix u-custom-color-2 u-section-row u-section-row-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-dd6b">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <a href="{% url 'home' %}" class="u-image u-logo u-image-1" data-image-width="4168" data-image-height="4168">
+              <img src="../static/images/Pngtreeawardbadgeicondesigntemplate_4766799.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-submenu-level="on-click">
+              <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                  <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+                </a>
+              </div>
+              <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'home' %}" style="padding: 10px 20px;">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Игры</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'contact' %}" style="padding: 10px 20px;">Контакты</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'about' %}" style="padding: 10px 20px;">О Нас</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'faq' %}" style="padding: 10px 20px;">FAQ</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'logout' %}" style="padding: 10px 20px;">Выйти</a>
+</li></ul>
+              </div>
+              <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-90 u-sidenav">
+                  <div class="u-inner-container-layout u-sidenav-overflow">
+                    <div class="u-menu-close"></div>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Г{% url 'home' %}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Игры</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}">Контакты</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}">О Нас</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'faq' %}">FAQ</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'logout' %}">Выйти</a>
+</li></ul>
+                  </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-65"></div>
+              </div>
+            </nav>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+        <div class="u-section-row u-section-row-2" id="sec-2c84">
+          <div class="u-clearfix u-sheet u-sheet-2"></div>
+          
+          
+          
+          
+          
+        </div>
+      </div></header>
+
+    <section class="u-clearfix u-section-1" id="sec-f202">
+      <div class="u-clearfix u-sheet u-sheet-1"><!--blog--><!--blog_options_json--><!--{"type":"Recent","source":"","tags":"","count":""}--><!--/blog_options_json-->
+        <div class="u-blog u-expanded-width u-layout-horizontal u-blog-1">
+          <div class="u-repeater u-repeater-1"><!--blog_post-->
+            <div class="u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h2 class="u-text u-text-default u-text-1">Шрек навсегда!</h2>
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'shrek' %}" {% endif %}><!--blog_post_image-->
+                  <img alt="" class="u-blog-control u-image u-image-default u-image-1" src="../static/images/52741025-0.jpeg" data-image-width="1680" data-image-height="1050"><!--/blog_post_image-->
+                </a>
+                <p class="u-text u-text-default u-text-2">Считаете себя фанатом мультфильма "Шрек"?<br>Проверьте себя и узнайте, насколько хорошо вы знаете не стареющий хит.
+                </p>
+                  {% if request.user.is_authenticated %}
+                <a href="{% url 'shrek' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-1">Начать</a>
+              {% endif %}
+
+              </div>
+            </div><!--/blog_post--><!--blog_post-->
+            <div class="u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h2 class="u-text u-text-default u-text-3">Depeche Mode</h2>
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'depeche' %}" {% endif %}><!--blog_post_image-->
+                  <img alt="" class="u-blog-control u-image u-image-default u-image-2" src="../static/images/wall04.jpg" data-image-width="1024" data-image-height="768"><!--/blog_post_image-->
+                </a>
+                <p class="u-text u-text-default u-text-4">Группа, покарившая сердца миллионов.<br>Проверьте себя на знание песен легенд.
+                </p>
+                  {% if request.user.is_authenticated %}
+                <a href="{% url 'depeche' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-2">Начать</a>
+                    {% endif %}
+              </div>
+            </div><!--/blog_post--><!--blog_post-->
+            <div class="u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h2 class="u-text u-text-default u-text-5">There's a starman waiting in the sky</h2>
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'bowie' %}" {% endif %}><!--blog_post_image-->
+                  <img alt="" class="u-blog-control u-image u-image-default u-image-3" src="../static/images/img_1.png" data-image-width="400" data-image-height="263"><!--/blog_post_image-->
+                </a>
+                <p class="u-text u-text-default u-text-6">В течение нашей жизни мы видим множество звёзд как старых, так и новых. Некоторые из них горят ярче, чем другие. И все знают, что рано или поздно каждой звезде приходит свой срок, но когда гаснут те звёзды, чей свет особенно ярок, небо без них выглядит совсем по другому.</p>
+                {% if request.user.is_authenticated %}
+                  <a href="{% url 'bowie' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-3">Начать</a>
+                 {% endif %}
+              </div>
+            </div><!--/blog_post--><!--blog_post-->
+            <div class="u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h2 class="u-text u-text-default u-text-7">Поэтесса современности</h2>
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'lana' %}" {% endif %}><!--blog_post_image-->
+                  <img alt="" class="u-blog-control u-image u-image-default u-image-4" src="../static/images/wpid-6d6508e42627c80.jpg" data-image-width="1680" data-image-height="1050"><!--/blog_post_image-->
+                </a>
+                <p class="u-text u-text-default u-text-8">Современная поэтесса и исполнительница, покарившая сердца миллионов.<br>Узнайте, настколько хорошо вам знакомы тексты её песен.
+                </p>
+
+              {% if request.user.is_authenticated %}
+                <a href="{% url 'lana' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-4">Начать</a>
+              {% endif %}
+              </div>
+            </div><!--/blog_post--><!--blog_post-->
+            <div class="u-blog-post u-container-style u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-5">
+                <h2 class="u-text u-text-default u-text-9">Кто убил Лору Палмер?</h2>
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'twin' %}" {% endif %}><!--blog_post_image-->
+                  <img alt="" class="u-blog-control u-image u-image-default u-image-5" src="../static/images/img.png" data-image-width="1200" data-image-height="676"><!--/blog_post_image-->
+                </a>
+              <p class="u-text u-text-default u-text-10">Известны ли вам тайны маленького городка штата Вашингтон? Узнайте прямо сейчас</p>
+
+              {% if request.user.is_authenticated %}
+                       <a href="{% url 'twin' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-5">Начать</a>
+                {% endif %}
+              </div>
+            </div><!--/blog_post-->
+          </div>
+          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div><!--/blog-->
+      </div>
+    </section>
+
+    
+    <footer class="u-align-center u-clearfix u-custom-color-2 u-footer u-footer" id="sec-f2fb"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com/k/youtube-website-templates" class="u-active-none u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-top-left-radius-0 u-top-right-radius-0 u-btn-1"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg><img></span>&nbsp;+7(918) 668 29-10
+        </a><span class="u-icon u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 57.949 57.949" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9be2"></use></svg><svg class="u-svg-content" viewBox="0 0 57.949 57.949" x="0px" y="0px" id="svg-9be2" style="enable-background:new 0 0 57.949 57.949;"><g><path d="M29.975,27.985h11.972c-0.123-4.348-1.033-8.567-2.664-12.477c-3.01,0.874-6.131,1.355-9.308,1.44V27.985z"></path><path d="M40.384,13.057c2.928-1.01,5.731-2.392,8.328-4.169l0.653-0.5C44.588,3.658,38.18,0.58,31.071,0.069L30.553,0.49
+		C34.767,3.979,38.099,8.268,40.384,13.057z"></path><path d="M29.975,2.628v12.32c2.891-0.082,5.731-0.513,8.473-1.283C36.421,9.505,33.557,5.753,29.975,2.628z"></path><path d="M41.531,42.202c3.13,1.132,6.12,2.668,8.885,4.639l0.868,0.65c3.976-4.785,6.439-10.866,6.665-17.505H43.947
+		C43.834,34.224,43.006,38.343,41.531,42.202z"></path><path d="M9.237,8.888c2.597,1.777,5.401,3.158,8.328,4.169c2.285-4.788,5.617-9.077,9.832-12.567l-0.518-0.421
+		c-7.125,0.512-13.547,3.603-18.328,8.35L9.237,8.888z"></path><path d="M27.975,2.628c-3.583,3.125-6.446,6.878-8.473,11.036c2.742,0.77,5.582,1.202,8.473,1.283V2.628z"></path><path d="M14.003,29.985H0c0.227,6.639,2.689,12.719,6.665,17.505l0.85-0.635c2.775-1.977,5.771-3.518,8.906-4.652
+		C14.943,38.341,14.116,34.222,14.003,29.985z"></path><path d="M16.752,14.89c-3.037-1.064-5.945-2.505-8.644-4.351L7.17,9.897C2.901,14.768,0.236,21.072,0,27.985h14.003
+		C14.124,23.425,15.061,18.997,16.752,14.89z"></path><path d="M16.003,27.985h11.972V16.948c-3.179-0.085-6.301-0.566-9.309-1.438C17.035,19.419,16.125,23.637,16.003,27.985z"></path><path d="M27.297,57.391c-4.419-3.695-7.841-8.259-10.111-13.341c-2.992,1.074-5.851,2.538-8.492,4.42l-0.689,0.515
+		c4.774,5.003,11.31,8.304,18.605,8.896L27.297,57.391z"></path><path d="M27.975,40.023V29.985H16.003c0.113,4.019,0.905,7.924,2.313,11.58C21.429,40.627,24.669,40.111,27.975,40.023z"></path><path d="M49.236,48.456c-2.631-1.875-5.482-3.335-8.469-4.406c-2.272,5.094-5.698,9.662-10.113,13.344l0.685,0.487
+		c7.295-0.592,13.832-3.892,18.606-8.895L49.236,48.456z"></path><path d="M49.885,10.507c-2.72,1.862-5.643,3.311-8.689,4.38c1.692,4.108,2.629,8.537,2.751,13.098h14.003
+		c-0.237-6.935-2.917-13.256-7.209-18.133L49.885,10.507z"></path><path d="M27.975,55.342V42.023c-3.039,0.085-6.016,0.556-8.882,1.4C21.136,47.932,24.141,51.998,27.975,55.342z"></path><path d="M41.947,29.985H29.975v10.038c3.307,0.088,6.548,0.604,9.662,1.542C41.041,37.91,41.833,34.005,41.947,29.985z"></path><path d="M38.86,43.423c-2.866-0.844-5.845-1.314-8.885-1.4v13.323C33.806,52.013,36.814,47.943,38.86,43.423z"></path>
+</g></svg></span>
+        <p class="u-custom-font u-font-open-sans u-text u-text-default u-text-1">spanosenko@gmail.com</p>
+      </div></footer>
+    <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; right: 20px; bottom: 20px; padding: 10px;" class="u-back-to-top u-border-2 u-border-palette-1-base u-icon u-icon-circle u-opacity u-opacity-85" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+    </span>
+  
+</body></html>
