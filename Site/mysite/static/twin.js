@@ -80,7 +80,7 @@ const DATA =[
             },
             {
                 id: '12',
-                value: 'Лео Джонсон ',
+                value: 'Лео Джонсон',
                 correct: false,
             },
 

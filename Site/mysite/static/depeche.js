@@ -4,10 +4,10 @@ const DATA =[
         answers:[
             {
                 id:'1',
-                value:'Things get damaged ' +
+                value:'"Things get damaged ' +
                     ' Things get broken ' +
                     ' I thought we`d manage ' +
-                    ' But words left unspoken',
+                    ' But words left unspoken"',
                 correct: false,
             },
             {
@@ -16,7 +16,7 @@ const DATA =[
                     ' All I ever needed ' +
                     ' Is here in my arms' +
                     ' Worlds are very unnecessery' +
-                    ' They can only do harm..',
+                    ' They can only do harm.."',
                 correct: true,
             },
             {

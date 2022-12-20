@@ -5,7 +5,7 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from django.contrib.auth.forms import UserCreationForm
 from .forms import UserForm
-
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .forms import  LoginForm, RegisterForm
 
 
@@ -15,6 +15,9 @@ def index(request):
     if not request.user.is_authenticated:
         return redirect('login')
     return render(request,'Главная.html', {'user': request.user})
+
+
+
 
 def game(request):
     return render(request,'Игры.html')

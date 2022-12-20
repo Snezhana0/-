@@ -9,7 +9,7 @@ const DATA =[
             },
             {
                 id:'2',
-                value: '"Олег',
+                value: 'Мик Гордон',
                 correct: false,
             },
             {

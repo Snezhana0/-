@@ -80,6 +80,7 @@
           
         </div>
       </div></header>
+
     <section class="u-clearfix u-section-1" id="sec-f202">
       <div class="u-clearfix u-sheet u-sheet-1"><!--blog--><!--blog_options_json--><!--{"type":"Recent","source":"","tags":"","count":""}--><!--/blog_options_json-->
         <div class="u-blog u-expanded-width u-layout-horizontal u-blog-1">
@@ -87,54 +88,67 @@
             <div class="u-blog-post u-container-style u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h2 class="u-text u-text-default u-text-1">Шрек навсегда!</h2>
-                <a class="u-post-header-link" href="../static/blog/пост-5.html"><!--blog_post_image-->
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'shrek' %}" {% endif %}><!--blog_post_image-->
                   <img alt="" class="u-blog-control u-image u-image-default u-image-1" src="../static/images/52741025-0.jpeg" data-image-width="1680" data-image-height="1050"><!--/blog_post_image-->
                 </a>
                 <p class="u-text u-text-default u-text-2">Считаете себя фанатом мультфильма "Шрек"?<br>Проверьте себя и узнайте, насколько хорошо вы знаете не стареющий хит.
                 </p>
+                  {% if request.user.is_authenticated %}
                 <a href="{% url 'shrek' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-1">Начать</a>
+              {% endif %}
+
               </div>
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h2 class="u-text u-text-default u-text-3">Depeche Mode</h2>
-                <a class="u-post-header-link" href="../static/blog/пост-4.html"><!--blog_post_image-->
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'depeche' %}" {% endif %}><!--blog_post_image-->
                   <img alt="" class="u-blog-control u-image u-image-default u-image-2" src="../static/images/wall04.jpg" data-image-width="1024" data-image-height="768"><!--/blog_post_image-->
                 </a>
                 <p class="u-text u-text-default u-text-4">Группа, покарившая сердца миллионов.<br>Проверьте себя на знание песен легенд.
                 </p>
+                  {% if request.user.is_authenticated %}
                 <a href="{% url 'depeche' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-2">Начать</a>
+                    {% endif %}
               </div>
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <h2 class="u-text u-text-default u-text-5">There's a starman waiting in the sky...</h2>
-                <a class="u-post-header-link" href="../static/blog/пост-3.html"><!--blog_post_image-->
+                <h2 class="u-text u-text-default u-text-5">There's a starman waiting in the sky</h2>
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'bowie' %}" {% endif %}><!--blog_post_image-->
                   <img alt="" class="u-blog-control u-image u-image-default u-image-3" src="../static/images/img_1.png" data-image-width="400" data-image-height="263"><!--/blog_post_image-->
                 </a>
                 <p class="u-text u-text-default u-text-6">В течение нашей жизни мы видим множество звёзд как старых, так и новых. Некоторые из них горят ярче, чем другие. И все знают, что рано или поздно каждой звезде приходит свой срок, но когда гаснут те звёзды, чей свет особенно ярок, небо без них выглядит совсем по другому.</p>
-                <a href="{% url 'bowie' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-3">Начать</a>
+                {% if request.user.is_authenticated %}
+                  <a href="{% url 'bowie' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-3">Начать</a>
+                 {% endif %}
               </div>
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-4">
                 <h2 class="u-text u-text-default u-text-7">Поэтесса современности</h2>
-                <a class="u-post-header-link" href="../static/blog/пост-2.html"><!--blog_post_image-->
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'lana' %}" {% endif %}><!--blog_post_image-->
                   <img alt="" class="u-blog-control u-image u-image-default u-image-4" src="../static/images/wpid-6d6508e42627c80.jpg" data-image-width="1680" data-image-height="1050"><!--/blog_post_image-->
                 </a>
                 <p class="u-text u-text-default u-text-8">Современная поэтесса и исполнительница, покарившая сердца миллионов.<br>Узнайте, настколько хорошо вам знакомы тексты её песен.
                 </p>
+
+              {% if request.user.is_authenticated %}
                 <a href="{% url 'lana' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-4">Начать</a>
+              {% endif %}
               </div>
             </div><!--/blog_post--><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-5">
                 <h2 class="u-text u-text-default u-text-9">Кто убил Лору Палмер?</h2>
-                <a class="u-post-header-link" href="../static/blog/пост-1.html"><!--blog_post_image-->
+                <a class="u-post-header-link" {% if request.user.is_authenticated %} href="{% url 'twin' %}" {% endif %}><!--blog_post_image-->
                   <img alt="" class="u-blog-control u-image u-image-default u-image-5" src="../static/images/img.png" data-image-width="1200" data-image-height="676"><!--/blog_post_image-->
                 </a>
-                <p class="u-text u-text-default u-text-10">Известны ли вам тайны маленького городка штата Вашингтон? Узнайте прямо сейчас</p>
-                <a href="{% url 'twin' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-5">Начать</a>
+              <p class="u-text u-text-default u-text-10">Известны ли вам тайны маленького городка штата Вашингтон? Узнайте прямо сейчас</p>
+
+              {% if request.user.is_authenticated %}
+                       <a href="{% url 'twin' %}" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-6 u-btn-5">Начать</a>
+                {% endif %}
               </div>
             </div><!--/blog_post-->
           </div>
@@ -165,7 +179,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         </div><!--/blog-->
       </div>
     </section>
-    
+
     
     <footer class="u-align-center u-clearfix u-custom-color-2 u-footer u-footer" id="sec-f2fb"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com/k/youtube-website-templates" class="u-active-none u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-top-left-radius-0 u-top-right-radius-0 u-btn-1"><span class="u-icon"><svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg><img></span>&nbsp;+7(918) 668 29-10
